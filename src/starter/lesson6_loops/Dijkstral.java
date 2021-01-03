@@ -1,4 +1,4 @@
-package starter.lesson6_loop;
+package starter.lesson6_loops;
 
 import java.util.Scanner;
 

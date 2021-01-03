@@ -1,4 +1,4 @@
-package starter.lesson6_loop;
+package starter.lesson6_loops;
 
 public class Factorial {
     public static void main(String[] args) {
