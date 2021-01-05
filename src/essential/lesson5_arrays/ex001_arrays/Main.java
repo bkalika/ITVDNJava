@@ -1,4 +1,4 @@
-package essential.ex001_arrays;
+package essential.lesson5_arrays.ex001_arrays;
 
 import java.util.Arrays;
 
