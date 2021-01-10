@@ -9,7 +9,7 @@ public class Car {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
+        if (this == obj) { // <-- рефлективность
             return true;
         }
         if (obj == null || getClass() != obj.getClass()) {

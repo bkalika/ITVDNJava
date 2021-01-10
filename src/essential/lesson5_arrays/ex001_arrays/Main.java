@@ -1,5 +1,6 @@
 package essential.lesson5_arrays.ex001_arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -24,5 +25,13 @@ public class Main {
         System.out.println(Arrays.binarySearch(arr5, 12));
 
         System.out.println(Arrays.equals(arr5, arr6));
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        for (int i = 0; i < 40; i ++){
+            arrayList.add(i);
+        }
+        for(Integer i : arrayList){
+            System.out.println(i);
+        }
     }
 }

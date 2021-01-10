@@ -13,6 +13,7 @@ public class Main {
 
         Computer[] c = {c1, c2, m1};
         Phone[] p = {p1, p2, m2.createPhone()};
+
         for(Computer temp : c){
             temp.process();
         }
