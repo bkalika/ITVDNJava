@@ -1,0 +1,13 @@
+{
+  "firstName": "Bohdan",
+  "lastName": "Kalika",
+  "course": {
+    "author": "Yevnehii Tykhonov",
+    "title": "Java Professional renewed",
+    "description": "For me"
+  },
+  "personalContacts": [
+    "https://github.com/bkalika",
+    "https://www.facebook.com/official.kalika/"
+  ]
+}
