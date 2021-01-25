@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>bkalikamaven</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>Learning Maven</name>
+    <description>This is a project to learn Maven features</description>
+    <url>bkalika.com</url>
+
+    <licenses>
+        <license>
+            <name>SS-FF-DD</name>
+            <comments>Free to use</comments>
+        </license>
+    </licenses>
+
+    <organization>
+        <url>bkalika.com</url>
+        <name>bkalika</name>
+    </organization>
+
+    <developers>
+        <developer>
+            <name>bkalika</name>
+            <email>bogdan.kalika@gmail.com</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <spring.version>${spring.version}</spring.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <name>my-repo</name>
+            <id>repo</id>
+            <url>my-repo.com</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <url>aaa</url>
+            <id>junit</id>
+            <version>4.12</version>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencies>
+        <dependency>
+            <groupId></groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <profiles>
+        <profile>
+             <id>special-profile</id>
+            <build>
+                <directory>special-target</directory>
+            </build>
+            <activation>
+                <property>
+                    <name>my-name</name>
+                </property>
+            </activation>
+        </profile>
+    </profiles>
+
+
+</project>
