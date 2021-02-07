@@ -2,7 +2,7 @@ package professional_renewed.lesson13_multithreading.simple_thread;
 
 import java.util.ArrayList;
 
-public class SimpleThreadRunnable implements Runnable  {
+public class SimpleThreadRunnable implements Runnable {
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName());
         Thread t = new Thread(new SimpleThread());

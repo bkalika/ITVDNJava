@@ -45,7 +45,7 @@ class Penguin extends Bird{
 
     @Override
     void move(){
-        System.out.println("Swim");
+        System.out.println("ISwim");
     }
 }
 

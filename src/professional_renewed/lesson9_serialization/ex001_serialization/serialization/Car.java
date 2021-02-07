@@ -13,7 +13,7 @@ public class Car implements Serializable {
 
     @Override
     public String toString(){
-        return "Car{" +
+        return "Client{" +
                 "price=" + price +
                 ", model ='" + model + '\'' +
                 "}";
