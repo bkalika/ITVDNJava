@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS itvdn_db;
+
+USE itvdn_db;
+
+CREATE TABLE IF NOT EXISTS mp3(
+    id SERIAL,
+    name VARCHAR(25) NOT NULL,
+    author VARCHAR(25) NOT NULL,
+    PRIMARY KEY(id)
+)
