@@ -6,7 +6,7 @@ public class Main {
         Rectangle r2 = new Rectangle(8, 9);
         Circle c1 = new Circle(59);
 
-        var ac = new AreaCalculator();
+        AreaCalculator ac = new AreaCalculator();
         System.out.println(ac.areaCalc(r1, r2, c1));
     }
 }

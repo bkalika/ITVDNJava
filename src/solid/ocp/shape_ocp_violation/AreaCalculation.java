@@ -13,7 +13,7 @@ public class AreaCalculation {
     public double areaCalc(Object... shapes){
         double area = 0;
 
-        for(var shape : shapes){
+        for(Object shape : shapes){
             if (shape instanceof Rectangle){
                 Rectangle r = (Rectangle) shape;
                 area += r.getHeight() * r.getWidth();

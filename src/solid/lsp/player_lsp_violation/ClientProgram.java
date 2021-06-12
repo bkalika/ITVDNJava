@@ -19,7 +19,7 @@ public class ClientProgram {
     }
 
     public static void playVideoInAllPlayers(List<Player> allPlayers){
-        for(var player : allPlayers){
+        for(Player player : allPlayers){
             player.playVideo();
         }
     }
