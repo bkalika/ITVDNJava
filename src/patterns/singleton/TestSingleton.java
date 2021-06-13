@@ -11,7 +11,6 @@ public class TestSingleton {
     }
 
     private TestSingleton(){
-
     }
 
     public void print() {
